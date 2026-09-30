@@ -60,3 +60,18 @@ print(ident.isnumeric()) #Comprueba si todos los caracteres son números
 print(ident.isalpha()) #Comprueba si todos los caracteres son letras
 print(ident.islower()) #Comprueba si todos los caracteres son minusculas
 print(ident.isupper()) #Comprueba si todos los caracteres son mayusculas
+
+
+#EJERCICIO INTERPOLACIÓN
+name = 'Marta'
+edad = 19
+nota_media = 4.5
+colegio = 'Salesianos San Pedro'
+mascota = 'Gato'
+estudios = ['Grado Medio', 'Grado Superior']
+emocion = ('contenta', 'ilusionada', 'motivada')
+
+print(f'''Hola me llamo {name} y tengo {edad} años,\n
+estudio en {colegio} y temgo una nota media de {nota_media}.\n
+Los estudios realizados que tengo son {estudios[0]}, {estudios[1]} y me encuentro\n
+{emocion[0]}, {emocion[1]}, {emocion[2]} por empezar este curso.''')
