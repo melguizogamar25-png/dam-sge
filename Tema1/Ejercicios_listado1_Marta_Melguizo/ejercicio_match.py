@@ -1,21 +1,39 @@
 #Piedra, papel
 
-'''op = int(input('Introduce tu jugada: '))
+person_1 = 0
+person_2 = 0
 
-match op:
-    case 1:
-        match op == 1:
-            case 1: 
-                
-    case 2:
-        print('Papel gana')
-    case 3:'''
-
-person_1 = piedra
-person_2 = papel
-
+print('Bienvenidos')
 print('Juego Piedra, Papel o Tijera')
 
-match 
+person_1 = int (input('Jugador 1 elija: 1 - piedra | 2 - papel | 3 - tijeras'))
+person_2 = int (input('Jugador 1 elija: 1 - piedra | 2 - papel | 3 - tijeras'))
 
-        
+match person_1:
+    case 1:
+        match person_2:
+            case 1:
+                print('Empate')
+            case 2: 
+                print('Gana jugador 2')
+            case 3:
+                print('Gana jugador 1')
+    case 2:
+        match person_2:
+            case 1:
+                print('Gana jugador 1')  
+            case 2:
+                print('Empate')
+            case 3:
+                print('Gana jugador 2')
+    case 3:
+        match person_2:
+            case 1:
+                print('Gana jugador 2')
+            case 2:
+                print('Gana jugador 1')
+            case 3:
+                print('Empate')
+    case _:
+        print('Opción incorrecta') 
+    
