@@ -1,4 +1,3 @@
-#Hasta la pag 165
 #5.1.1 Creando listas
 listas_vacias = []
 listas_palabras = ['Python', 'JavaScript', 'C++']
@@ -20,7 +19,7 @@ tienda = ['Agua', 'Huevos', 'Aceite', 'Sal', 'Limón']
 
 print(tienda[1]) #Si ponemos un indice que no esta en la lista nos da error
 #Trocear una lista
-print(tienda[0:3]) #Coge el indice del 0 al 2, el ulktimo nunca lo acepta
+print(tienda[0:3]) #Coge el indice del 0 al 2, el ultimo nunca lo acepta
 
 #Invertir una lista
 print(tienda[::-1]) #Es la lista original pero invertida (Conservas la lista)
@@ -31,6 +30,8 @@ tienda.append('Atún')
 print(tienda)
 
 #Añadir a cualquier posición de una lista
+    #en este tipo de inserciones no obtendremos un
+    #error si especificamos índices fuera de los límites de la lista.
 tienda.insert(1, 'Jamón')
 print(tienda)
 
@@ -40,7 +41,7 @@ print(tienda * 3)
 #Combinar listas
 frutas = ['Naranja', 'Manzana', 'Piña']
 print(tienda + frutas) #Aqui estamos conservando la lista original
-print(tienda.extend(frutas))#Estamois modificando la lista original
+print(tienda.extend(frutas))#Estamos modificando la lista original
 
 #Modificar una lista
 tienda[0] = 'Jugo'
@@ -53,8 +54,8 @@ print(tienda)
 #Borrar elemento
 del tienda[3] #Se borra por el indice
 tienda.remove('Sal') #Se borra por su valor
-producto = tienda.pop() #Se copge el indice -1
-producto = tienda.pop(2)
+producto = tienda.pop() #Se coge el indice -1
+producto = tienda.pop(2)#Nos devuelve el elemento borrado
 print(producto)
 print(tienda)
 tienda[1:4] = [] #Mediante troceados
