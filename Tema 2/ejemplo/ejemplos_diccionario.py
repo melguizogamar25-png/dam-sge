@@ -33,4 +33,21 @@ print(person)
 
 # 5.3.3 Operaciones con diccionarios
 #Obtener un elemento
-#187
+rae = {
+    'bifronte': 'De dos frentes o dos caras',
+    'anarcoide': 'Que tiende al desorden',
+    'montuvio': 'Campesino de la costa'
+
+}
+print(rae['anarcoide']) #Para obtener un solo elemento necesitas escribir la clave entre corchetes
+#Para obetenr un elemento tambien podemos utilizar get
+print(rae.get('bifronte'))
+#Si no existe elemento que estamos qqueriendo obtener vamos a ponerle el mensje
+#Que queremos que pong para que no ponga none
+print(rae.get('programacion', 'No disponible'))
+
+#Añadir o modificar un elemento
+rae['enjuiciar'] = 'SOmeter una cuestión a examen, discusión y juicio'
+print(rae)
+
+
