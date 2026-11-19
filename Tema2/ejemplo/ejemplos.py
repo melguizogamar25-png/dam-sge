@@ -100,11 +100,11 @@ for i, producto in enumerate(tienda):
 #Iterar sobre multiples listas
 comida = ['Agua', 'Aceite', 'Arroz']
 details = ['mineral natural', 'de oliva virgen', 'basmati']
-for producto, details in zip(comida, details):
-    print(comida, details)
+for p, d in zip(comida, details):
+    print(p, d)
 
 #Lista explicita con la combinación
-print(list(zip(comida, details)))
+print(list(zip(p, d)))
 
 #5.1.4 Cuidado con las copias
     #Se cambian las dos listas, tanto la original como la copia

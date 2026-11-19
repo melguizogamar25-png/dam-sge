@@ -1,5 +1,3 @@
-# Creamos una lista mutable que contiene TUPLAS inmutables.
-# Cada tupla representa un registro fijo: (codigo_vuelo, destino, hora, pasajeros)
 vuelos = [
     ("IB3412", "Madrid", "08:30", 145),
     ("VY2010", "Barcelona", "10:15", 172),
@@ -22,16 +20,12 @@ while True:
 
     opcion = input("\nSelecciona una opción: ").strip()
 
-    # --- OPCIÓN 1: DESEMPAQUETADO EN BUCLES ---
     if opcion == "1":
-        # Formateamos cabeceras alineadas: <10 izquierda, >10 derecha
         print(f"\n{'CÓDIGO':<10} {'DESTINO':<15} {'HORA':<8} {'PASAJEROS':>10}")
         print("-" * 46)
-        # En cada iteración, Python "desempaqueta" los 4 elementos de la tupla en 4 variables sueltas
         for codigo, destino, hora, pasajeros in vuelos:
             print(f"{codigo:<10} {destino:<15} {hora:<8} {pasajeros:>10}")
 
-    # --- OPCIÓN 2: EMPAQUETADO DE TUPLA ---
     elif opcion == "2":
         cod = input("Código de vuelo (ej. IB1234): ").upper().strip()
         dest = input("Ciudad de destino: ").strip().capitalize()
