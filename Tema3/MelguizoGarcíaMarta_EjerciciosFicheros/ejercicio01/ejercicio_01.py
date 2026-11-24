@@ -5,11 +5,12 @@ contador = 0
 
 f = open('Tema3/MelguizoGarcíaMarta_EjerciciosFicheros/ejercicio01/entrada.txt')
 
-
 for linea in f:
-    if f.readline() == ('\n'):
+    if linea.strip():
         contador += 1
-        print(f.readline())
-    print(contador)
+
+f.close()
+
+print(f"El fichero tiene {contador} líneas no vacías.")
 
 
